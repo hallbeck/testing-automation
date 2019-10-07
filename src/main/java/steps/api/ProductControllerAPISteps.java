@@ -17,7 +17,7 @@ public class ProductControllerAPISteps {
     //GET
     @Step
     public void StatusAPIcall() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         given().param("productId", 9809209)
                 .when()
@@ -33,7 +33,7 @@ public class ProductControllerAPISteps {
     //GET
     @Step
     public void StatusAPIcall2() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         given().param("productId", 9809209)
                 .when()
@@ -46,7 +46,7 @@ public class ProductControllerAPISteps {
     //GET
     @Step
     public void StatusAPIcallNull() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         given().when()
                 .get(URL + "/early/access/product/")
@@ -57,7 +57,7 @@ public class ProductControllerAPISteps {
     //GET
     @Step
     public void StatusAPIcallNotInt() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         given().param("productId", "abc123")
                 .when()
@@ -69,7 +69,7 @@ public class ProductControllerAPISteps {
     //PUT (Update)
     @Step
     public void UpdateProductStatusHappy() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
         int productId = 0;
         JsonObject ProductInfo = Json.createObjectBuilder()
                 .add("endDate", "2019-09-06T16:59:25.306Z")
@@ -94,7 +94,7 @@ public class ProductControllerAPISteps {
     //PUT (Update)
     @Step
     public void UpdateProductStatusIsActiveNull() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
         int productId = 0;
         JsonObject ProductInfo = Json.createObjectBuilder()
                 .add("endDate", "2019-09-06T16:59:25.306Z")
@@ -119,7 +119,7 @@ public class ProductControllerAPISteps {
     //PUT (Update)
     @Step
     public void UpdateProductStatusStartDateNull() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
         int productId = 0;
         JsonObject ProductInfo = Json.createObjectBuilder()
                 .add("endDate", "2019-09-06T16:59:25.306Z")
@@ -144,7 +144,7 @@ public class ProductControllerAPISteps {
     //PUT (Update)
     @Step
     public void UpdateProductStatusEndDateNull() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
         int productId = 0;
         JsonObject ProductInfo = Json.createObjectBuilder()
                 .add("startDate", "2019-09-06T16:59:25.306Z")
@@ -169,7 +169,7 @@ public class ProductControllerAPISteps {
     //PUT (Update)
     @Step
     public void UpdateProductStatusInvalidProducId() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
         int productId = -0;
         JsonObject ProductInfo = Json.createObjectBuilder()
                 .add("endDate", "2019-09-06T16:59:25.306Z")
@@ -194,7 +194,7 @@ public class ProductControllerAPISteps {
     //PUT (Update)
     @Step
     public void UpdateProductStatusNullProducId() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
         JsonValue productId = JsonValue.NULL;
         JsonObject ProductInfo = Json.createObjectBuilder()
                 .add("endDate", "2019-09-06T16:59:25.306Z")
@@ -219,7 +219,7 @@ public class ProductControllerAPISteps {
 
     @Step
     public void RetrieveStatus() {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         Random rand = new Random();
         int productId = rand.nextInt(10000);

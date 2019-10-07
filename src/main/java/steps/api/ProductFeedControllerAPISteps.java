@@ -37,8 +37,7 @@ public class ProductFeedControllerAPISteps {
 
     @Step
     public void FileUpload() throws IOException {
-//        String URL = "http://.cluboautomation.test.ostk.com:8080";
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         boolean productsFile = false;
         File file;
@@ -68,7 +67,7 @@ public class ProductFeedControllerAPISteps {
 
     @Step
     public void FileUploadUpdate() throws IOException {
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         boolean productsFile = false;
         File file;

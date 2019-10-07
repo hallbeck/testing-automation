@@ -20,7 +20,7 @@ public class BatchControllerAPISteps {
     @Step
     public void ea_post_product_batch_status() {
 
-        String URL = "https://swapi.co/api";
+        String URL = "https://swapi.co/api/";
 
         Random rand = new Random();
         int productId = rand.nextInt(10000);

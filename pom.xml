@@ -23,7 +23,6 @@
         <!-- WebDriver -->
         <webdriver.driver>chrome</webdriver.driver>
         <webdriver.manager.version>1.7.2</webdriver.manager.version>
-        <webdb.version>3.0</webdb.version>
     </properties>
 
     <dependencies>
@@ -210,16 +209,6 @@
                 <configuration>
                     <rules>
                         <banDuplicateClasses>
-                            <ignoreClasses>
-                                <ignoreClass>javax.servlet.*</ignoreClass>
-                                <ignoreClass>module-info</ignoreClass>
-                                <ignoreClass>org.joda.*</ignoreClass>
-                                <ignoreClass>org.apache.xmlbeans.xml.stream.*</ignoreClass>
-                                <ignoreClass>org.openqa.selenium.*</ignoreClass>
-                                <ignoreClass>org.xmlpull.v1.*</ignoreClass>
-                                <ignoreClass>org.apache.tools.ant.ExitException</ignoreClass>
-                                <ignoreClass>org.apache.commons.collections.*</ignoreClass>
-                            </ignoreClasses>
                         </banDuplicateClasses>
                     </rules>
                 </configuration>

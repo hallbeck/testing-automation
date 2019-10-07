@@ -8,6 +8,6 @@ public class HealthAPISteps {
     @Step
     public void verifyThatAppIsRunning() {
         given()
-                .get("https://swapi.co/api").then().statusCode(200);
+                .get("https://swapi.co/api/").then().statusCode(200);
     }
 }
